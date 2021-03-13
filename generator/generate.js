@@ -6,20 +6,36 @@ const sortKeys = require("sort-keys");
 const debug = require("debug");
 const log = debug("snakedex:generator");
 
-const jsonRegex = "(.+)\.json$";
+const jsonRegex = /(.+)\.json$/;
 
+/**
+ * @typedef {Object} Snake
+ * @property {string} id
+ * @property {string?} image
+ * @property {string?} name
+ * @property {number?} snakeNumber
+ */
+
+/**
+ * Wraps snakes and length into an object.
+ * @param {(Snake[] | Object<string, Snake>)} snakes The snakes to wrap.
+ * @param {number} length The length to wrap.
+ */
 function wrap(snakes, length) {
 	return {
-		snakes,
 		length,
-	}
+		snakes,
+	};
 }
 
+/**
+ * Generates data.
+ */
 async function generate() {
 	const snakes = [];
 	const snakesById = {};
 	const snakesBySnakeNumber = {};
-	
+
 	const files = await fs.readdir("../data");
 
 	for (const file of files) {
@@ -28,7 +44,7 @@ async function generate() {
 			log("unknown file in data directory: '%s'", file);
 			continue;
 		}
-		
+
 		const snake = await fs.readJson(path.resolve("../data", file));
 		snake.id = match[1];
 
