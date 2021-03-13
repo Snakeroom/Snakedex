@@ -14,7 +14,9 @@ jobs:
           cd generator
           npm install
       - name: Generate
-        run: node .
+        run: |
+          cd generator
+          node .
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
