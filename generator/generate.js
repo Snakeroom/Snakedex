@@ -3,6 +3,9 @@ const path = require("path");
 
 const sortKeys = require("sort-keys");
 
+const debug = require("debug");
+const log = debug("snakedex:generator");
+
 const jsonRegex = "(.+)\.json$";
 
 function wrap(snakes, length) {
@@ -18,17 +21,28 @@ async function generate() {
 	const snakesBySnakeNumber = {};
 	
 	const files = await fs.readdir("../data");
-	const images = await fs.readdir("../image");
 
 	for (const file of files) {
 		const match = file.match(jsonRegex);
-		if (match === null) continue;
+		if (match === null) {
+			log("unknown file in data directory: '%s'", file);
+			continue;
+		}
 		
 		const snake = await fs.readJson(path.resolve("../data", file));
 		snake.id = match[1];
 
-		if (images.includes(snake.id + ".png")) {
+		try {
+			const image = await fs.readFile(path.resolve("../image", snake.id + ".png"));
+
 			snake.image = "./image/" + snake.id + ".png";
+			await fs.outputFile("./output/image/" + snake.id + ".png", image);
+		} catch (error) {
+			if (error.code === "ENOENT") {
+				log("snake with id '%s' has no image", snake.id);
+			} else {
+				throw error;
+			}
 		}
 
 		const sortedSnake = sortKeys(snake, {
@@ -41,6 +55,8 @@ async function generate() {
 	}
 
 	const length = snakes.length;
+	log("found %d snake%s", length, length === 1 ? "" : "s");
+
 	fs.outputJson("./output/listing/all.json", wrap(snakes, length));
 	fs.outputJson("./output/listing/by_id.json", wrap(snakesById, length));
 	fs.outputJson("./output/listing/by_snake_number.json", wrap(snakesBySnakeNumber, length));
