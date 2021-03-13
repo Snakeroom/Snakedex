@@ -18,12 +18,18 @@ async function generate() {
 	const snakesBySnakeNumber = {};
 	
 	const files = await fs.readdir("../data");
+	const images = await fs.readdir("../image");
+
 	for (const file of files) {
 		const match = file.match(jsonRegex);
 		if (match === null) continue;
 		
 		const snake = await fs.readJson(path.resolve("../data", file));
 		snake.id = match[1];
+
+		if (images.includes(snake.id + ".png")) {
+			snake.image = "./image/" + snake.id + ".png";
+		}
 
 		const sortedSnake = sortKeys(snake, {
 			deep: true,
