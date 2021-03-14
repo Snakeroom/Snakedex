@@ -1,6 +1,8 @@
 const fs = require("fs-extra");
 const path = require("path");
 
+const sharp = require("sharp");
+
 const sortKeys = require("sort-keys");
 
 const debug = require("debug");
@@ -9,9 +11,20 @@ const log = debug("snakedex:generator");
 const jsonRegex = /(.+)\.json$/;
 
 /**
+ * An object mapping resize names to the widths that snake images should be resized to.
+ * @type {Object<string, number>}
+ */
+const resizes = {
+	"128x": 128,
+	"256x": 256,
+	"32x": 32,
+	"64x": 64,
+};
+
+/**
  * @typedef {Object} Snake
  * @property {string} id
- * @property {string?} image
+ * @property {Object<string, string>?} image
  * @property {string?} name
  * @property {number?} snakeNumber
  */
@@ -51,8 +64,16 @@ async function generate() {
 		try {
 			const image = await fs.readFile(path.resolve("../image", snake.id + ".png"));
 
-			snake.image = "./image/" + snake.id + ".png";
-			await fs.outputFile("./output/image/" + snake.id + ".png", image);
+			snake.images = {
+				full: "./image/full/" + snake.id + ".png",
+			};
+			await fs.outputFile("./output/image/full/" + snake.id + ".png", image);
+
+			for (const [ resize, width ] of Object.entries(resizes)) {
+				const resizedImage = await sharp(image).resize(width).toBuffer();
+				snake.images[resize] = "./image/" + resize + "/" + snake.id + ".png",
+				await fs.outputFile("./output/image/" + resize + "/" + snake.id + ".png", resizedImage);
+			}
 		} catch (error) {
 			if (error.code === "ENOENT") {
 				log("snake with id '%s' has no image", snake.id);
