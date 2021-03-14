@@ -1,1 +1,1 @@
-{"length":1,"snakes":{"1":{"id":"snek","image":"./image/snek.png","name":"Snek","snakeNumber":1}}}
+{"length":1,"snakes":{"1":{"id":"snek","images":{"128x":"./image/128x/snek.png","256x":"./image/256x/snek.png","32x":"./image/32x/snek.png","64x":"./image/64x/snek.png","full":"./image/full/snek.png"},"name":"Snek","snakeNumber":1}}}
