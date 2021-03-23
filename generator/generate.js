@@ -99,13 +99,13 @@ async function generate() {
 			const image = await fs.readFile(path.resolve("../image", snake.id + ".png"));
 
 			snake.images = {
-				full: "./image/full/" + snake.id + ".png",
+				full: "image/full/" + snake.id + ".png",
 			};
 			await fs.outputFile("./output/image/full/" + snake.id + ".png", image);
 
 			for (const [ resize, width ] of Object.entries(resizes)) {
 				const resizedImage = await sharp(image).resize(width).toBuffer();
-				snake.images[resize] = "./image/" + resize + "/" + snake.id + ".png",
+				snake.images[resize] = "image/" + resize + "/" + snake.id + ".png",
 				await fs.outputFile("./output/image/" + resize + "/" + snake.id + ".png", resizedImage);
 			}
 		} catch (error) {
