@@ -42,14 +42,29 @@ function wrap(snakes, length) {
 }
 
 /**
- * Generates data.
+ * @param {Snake} a The first snake to compare.
+ * @param {Snake} b The second snake to compare.
  */
-async function generate() {
-	const snakes = [];
-	const snakesById = {};
-	const snakesBySnakeNumber = {};
+function compareSnakes(a, b) {
+	if (!a.firstAppearance || !a.firstAppearance.date) return -1;
+	if (!b.firstAppearance || !b.firstAppearance.date) return 1;
 
+	const dateCompare = new Date(a.firstAppearance.date) - new Date(b.firstAppearance.date);
+	if (dateCompare === 0 && a.firstAppearance.order && b.firstAppearance.order) {
+		return a.firstAppearance.order - b.firstAppearance.order;
+	}
+
+	return dateCompare;
+}
+
+/**
+ * Gets a list of snakes sorted by first appearance date.
+ * These snakes lack generated data except for their ID,
+ * which is inferred from the file name.
+ */
+async function getRawSnakes() {
 	const files = await fs.readdir("../data");
+	const rawSnakes = [];
 
 	for (const file of files) {
 		const match = file.match(jsonRegex);
@@ -58,8 +73,27 @@ async function generate() {
 			continue;
 		}
 
-		const snake = await fs.readJson(path.resolve("../data", file));
-		snake.id = match[1];
+		const rawSnake = await fs.readJson(path.resolve("../data", file));
+		rawSnake.id = match[1];
+
+		rawSnakes.push(rawSnake);
+	}
+
+	return rawSnakes.sort(compareSnakes);
+}
+
+/**
+ * Generates data.
+ */
+async function generate() {
+	const snakes = [];
+	const snakesById = {};
+	const snakesBySnakeNumber = {};
+
+	const rawSnakes = await getRawSnakes();
+	let snakeNumber = 1;
+	for (const snake of rawSnakes) {
+		snake.snakeNumber = snakeNumber;
 
 		try {
 			const image = await fs.readFile(path.resolve("../image", snake.id + ".png"));
@@ -89,6 +123,8 @@ async function generate() {
 		snakes.push(sortedSnake);
 		snakesById[snake.id] = sortedSnake;
 		snakesBySnakeNumber[snake.snakeNumber] = sortedSnake;
+
+		snakeNumber += 1;
 	}
 
 	const length = snakes.length;

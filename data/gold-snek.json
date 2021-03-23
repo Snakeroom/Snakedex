@@ -1,8 +1,8 @@
 {
 	"name": "Gold Snek",
-	"snakeNumber": 3,
 	"firstAppearance": {
 		"date": "2019-03-25T23:45:35.000Z",
+		"order": 2,
 		"source": "https://www.reddit.com/r/miamizshrine/comments/b5ic5g/if_the_snakes_were_awards/"
 	}
 }
