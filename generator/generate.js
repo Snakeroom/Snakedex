@@ -104,7 +104,10 @@ async function generate() {
 			await fs.outputFile("./output/image/full/" + snake.id + ".png", image);
 
 			for (const [ resize, width ] of Object.entries(resizes)) {
-				const resizedImage = await sharp(image).resize(width).toBuffer();
+				const resizedImage = await sharp(image)
+					.resize(width)
+					.toBuffer();
+
 				snake.images[resize] = "image/" + resize + "/" + snake.id + ".png",
 				await fs.outputFile("./output/image/" + resize + "/" + snake.id + ".png", resizedImage);
 			}
@@ -134,4 +137,5 @@ async function generate() {
 	fs.outputJson("./output/listing/by_id.json", wrap(snakesById, length));
 	fs.outputJson("./output/listing/by_snake_number.json", wrap(snakesBySnakeNumber, length));
 }
+/* eslint-disable-next-line unicorn/prefer-top-level-await */
 generate();
