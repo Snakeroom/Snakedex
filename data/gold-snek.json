@@ -1,5 +1,6 @@
 {
 	"name": "Gold Snek",
+	"pixelated": true,
 	"firstAppearance": {
 		"date": "2019-03-25T23:45:35.000Z",
 		"order": 2,

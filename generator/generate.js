@@ -103,9 +103,13 @@ async function generate() {
 			};
 			await fs.outputFile("./output/image/full/" + snake.id + ".png", image);
 
+			const resizeOptions = {
+				kernel: snake.pixelated ? "nearest" : null,
+			};
+
 			for (const [ resize, width ] of Object.entries(resizes)) {
 				const resizedImage = await sharp(image)
-					.resize(width)
+					.resize(width, null, resizeOptions)
 					.toBuffer();
 
 				snake.images[resize] = "image/" + resize + "/" + snake.id + ".png",

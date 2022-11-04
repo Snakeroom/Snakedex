@@ -1,6 +1,7 @@
 {
 	"names": ["Place 2 Snek", "Replace Snek"],
 	"description": "Designed for the 2022 r/Place event to be placed on the canvas as Snakeroom's primary art",
+	"pixelated": true,
 	"firstAppearance": {
 		"date": "2022-03-30T02:54:47.310Z",
 		"source": "https://canary.discord.com/channels/429823323585773568/958035369109119027/958559891478421565",

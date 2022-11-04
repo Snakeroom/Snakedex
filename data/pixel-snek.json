@@ -1,5 +1,6 @@
 {
 	"name": "Pixel Snek",
+	"pixelated": true,
 	"firstAppearance": {
 		"date": "2021-03-10T22:21:03.212Z",
 		"source": "https://discord.com/channels/429823323585773568/614244478072651786/819334063428861952"
