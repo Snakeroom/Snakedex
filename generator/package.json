@@ -26,8 +26,8 @@
 		"sort-keys": "^4.2.0"
 	},
 	"devDependencies": {
-		"eslint": "^8.13.0",
-		"eslint-config-haykam": "^1.17.0"
+		"eslint": "^8.26.0",
+		"eslint-config-haykam": "^1.19.0"
 	},
 	"eslintConfig": {
 		"extends": "eslint-config-haykam"
