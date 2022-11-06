@@ -1,8 +1,18 @@
 {
-	"name": "Platinum Snek",
+	"names": [
+		"Platinum Snek"
+	],
+	"description": "A snek representing the platinum award on Reddit",
+	"pixelated": true,
 	"firstAppearance": {
 		"date": "2019-03-25T23:45:35.000Z",
-		"order": 3,
 		"source": "https://www.reddit.com/r/miamizshrine/comments/b5ic5g/if_the_snakes_were_awards/"
-	}
+	},
+	"artists": [
+		{
+			"name": "haykam",
+			"discord": 412782876304867329,
+			"reddit": "haykam821"
+		}
+	]
 }

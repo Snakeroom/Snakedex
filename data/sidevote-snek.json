@@ -1,7 +1,17 @@
 {
-	"name": "Sidevote Snek",
+	"names": [
+		"Sidevote Snek"
+	],
+	"description": "A snek who is ambivalent to your post",
 	"firstAppearance": {
 		"date": "2022-04-20T04:09:58.834Z",
 		"source": "https://discord.com/channels/429823323585773568/965703297782673408/966188959359189042"
-	}
+	},
+	"artists": [
+		{
+			"name": "Betawolfs",
+			"discord": 327984584925118466,
+			"reddit": "Betawolfs"
+		}
+	]
 }

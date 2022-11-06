@@ -3,8 +3,17 @@
 		"Lovely Snek",
 		"Smiling Snek with 3 Hearts"
 	],
+	"description": "A snek with hearts surrounding it",
+	"pixelated": true,
 	"firstAppearance": {
 		"date": "2022-11-01T21:51:53.088Z",
 		"source": "https://discord.com/channels/429823323585773568/1031624157831635098/1037121830101712988"
-	}
+	},
+	"artists": [
+		{
+			"name": "haykam",
+			"discord": 412782876304867329,
+			"reddit": "haykam821"
+		}
+	]
 }

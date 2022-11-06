@@ -1,7 +1,18 @@
 {
-	"name": "Napping Snek",
+	"names": [
+		"Napping Snek",
+		"Dabbing Snek"
+	],
+	"description": "A snek curled up taking a nice nap",
 	"firstAppearance": {
 		"date": "2020-10-14T21:57:02.068Z",
 		"source": "https://discord.com/channels/429823323585773568/429823324210593793/766057002589749268"
-	}
+	},
+	"artists": [
+		{
+			"name": "Betawolfs",
+			"discord": 327984584925118466,
+			"reddit": "Betawolfs"
+		}
+	]
 }

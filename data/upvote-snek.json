@@ -1,7 +1,17 @@
 {
-	"name": "Upvote Snek",
+	"names": [
+		"Upvote Snek"
+	],
+	"description": "A snek upvoting your post",
 	"firstAppearance": {
 		"date": "2020-10-14T21:19:35.564Z",
 		"source": "https://discord.com/channels/429823323585773568/429823324210593793/766047580068380672"
-	}
+	},
+	"artists": [
+		{
+			"name": "Betawolfs",
+			"discord": 327984584925118466,
+			"reddit": "Betawolfs"
+		}
+	]
 }

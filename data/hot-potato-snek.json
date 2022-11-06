@@ -1,15 +1,20 @@
 {
-	"names": ["Hot Potato Snek", "Sponge Snek", "Swiss Cheese Snek"],
-	"description": "Designed after the 2022 r/Place event codenamed Hot Potato",
+	"names": [
+		"Hot Potato Snek",
+		"Sponge Snek",
+		"Swiss Cheese Snek"
+	],
+	"description": "A snek designed after the 2022 r/Place event codename, 'Hot Potato'",
+	"pixelated": true,
 	"firstAppearance": {
 		"date": "2022-03-23T18:33:00.809Z",
-		"source": "https://canary.discord.com/channels/429823323585773568/429823324210593793/956259288467243059",
-		"alternativeVersions": [{}]
+		"source": "https://canary.discord.com/channels/429823323585773568/429823324210593793/956259288467243059"
 	},
-	"artists": [{
-			"discordId": 410481791204327424,
-			"discordUsername": "✨Twinkle SunnySun✨#1278",
-			"redditId": "1owkt0e1",
-			"redditUsername": "Twinkle SunnySun"
-	}]
+	"artists": [
+		{
+			"name": "✨Twinkle SunnySun✨",
+			"discord": 410481791204327424,
+			"reddit": "Twinkle SunnySun"
+		}
+	]
 }

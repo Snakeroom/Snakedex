@@ -1,14 +1,18 @@
 {
-	"names": ["Place 2 Fanart Snek", "Replace Fanart Snek", "Sneighborhood Snek"],
-	"description": "Drawn to represent the partnership of the Sneighborhood communities, Snakeroom, OneTrueBiribiri, Balisong, and Moetown (not pictured)",
+	"names": [
+		"Place 2 Fanart Snek",
+		"Replace Fanart Snek",
+		"Sneighborhood Snek"
+	],
+	"description": "Drawn to represent the partnership of the Sneighborhood communities, Snakeroom, OneTrueBiribiri, Balisong, and Motown (not pictured)",
 	"firstAppearance": {
 		"date": "2022-04-05T00:37:28.000Z",
-		"source": "https://www.reddit.com/r/OneTrueBiribiri/comments/twi5ba/in_celebration_to_the_efforts_that_landed_us_a/",
-		"alternativeVersions": []
+		"source": "https://www.reddit.com/r/OneTrueBiribiri/comments/twi5ba/in_celebration_to_the_efforts_that_landed_us_a/"
 	},
-	"artists": [{
-			"redditId": "9c8q2vi",
-			"redditUsername": "LivinOut",
-            "redditTitle": "CeroVein"
-    }]
+	"artists": [
+		{
+			"name": "CeroVein",
+			"reddit": "LivinOut"
+		}
+	]
 }

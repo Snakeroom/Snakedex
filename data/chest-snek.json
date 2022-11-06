@@ -1,7 +1,17 @@
 {
-	"name": "Chest Snek",
+	"names": [
+		"Chest Snek"
+	],
+	"description": "A snek hiding in a treasure chest",
 	"firstAppearance": {
 		"date": "2022-10-16T13:19:51.392Z",
 		"source": "https://discord.com/channels/429823323585773568/1028043758203310080/1031194768119709707"
-	}
+	},
+	"artists": [
+		{
+			"name": "Betawolfs",
+			"discord": 327984584925118466,
+			"reddit": "Betawolfs"
+		}
+	]
 }
