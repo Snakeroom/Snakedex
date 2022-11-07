@@ -30,6 +30,24 @@ const resizes = {
  */
 
 /**
+ * Gets the legacy names array based on the primary and alternate names of a snake.
+ * @param {Snake} snake The snake to get names format.
+ */
+function getLegacyNamesArray(snake) {
+	const names = [];
+
+	if (typeof snake.name === "string") {
+		names.push(snake.name);
+	}
+
+	if (Array.isArray(snake.alternateNames)) {
+		names.push(...snake.alternateNames);
+	}
+
+	return names;
+}
+
+/**
  * Wraps snakes and length into an object.
  * @param {(Snake[] | Object<string, Snake>)} snakes The snakes to wrap.
  * @param {number} length The length to wrap.
@@ -122,6 +140,9 @@ async function generate() {
 				throw error;
 			}
 		}
+
+		// Provide legacy 'names' array
+		snake.names = getLegacyNamesArray(snake);
 
 		const sortedSnake = sortKeys(snake, {
 			deep: true,

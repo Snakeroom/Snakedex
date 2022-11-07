@@ -1,6 +1,6 @@
 {
-	"names": [
-		"Lovely Snek",
+	"name": "Lovely Snek",
+	"alternateNames": [
 		"Smiling Snek with 3 Hearts"
 	],
 	"description": "A snek with hearts surrounding it",
