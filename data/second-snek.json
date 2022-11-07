@@ -1,8 +1,16 @@
 {
 	"name": "Second Snek",
+	"description": "A snek designed after the 2021 r/Second event logo",
 	"pixelated": true,
 	"firstAppearance": {
 		"date": "2021-03-24T01:41:10.972Z",
 		"source": "https://discord.com/channels/429823323585773568/562206450349506560/824095469876674571"
-	}
+	},
+	"artists": [
+		{
+			"name": "✨Twinkle SunnySun✨",
+			"discord": "410481791204327424",
+			"reddit": "Twinkle SunnySun"
+		}
+	]
 }

@@ -1,19 +1,19 @@
 {
-	"name": "Place 2 Snek",
+	"name": "Replace Snek",
 	"alternateNames": [
-		"Replace Snek"
+		"Place 2 Snek"
 	],
 	"description": "Designed for the 2022 r/Place event to be placed on the canvas as Snakeroom's primary art",
 	"pixelated": true,
 	"firstAppearance": {
 		"date": "2022-03-30T02:54:47.310Z",
-		"source": "https://canary.discord.com/channels/429823323585773568/958035369109119027/958559891478421565",
-		"alternativeVersions": []
+		"source": "https://canary.discord.com/channels/429823323585773568/958035369109119027/958559891478421565"
 	},
-	"artists": [{
-            "discordId": 165534903570530306,
-			"discordUsername": "Uristqwerty",
-			"redditId": "6lg6v",
-			"redditUsername": "Uristqwerty"
-    }]
+	"artists": [
+		{
+			"name": "Uristqwerty",
+			"discord": "165534903570530306",
+			"reddit": "Uristqwerty"
+		}
+	]
 }
