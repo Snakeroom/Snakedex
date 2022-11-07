@@ -1,0 +1,19 @@
+{
+	"name": "Sock Snek",
+	"alternateNames": [
+		"Gym Snek"
+	],
+	"description": "A snek made of a sock and two buttons",
+	"pixelated": true,
+	"firstAppearance": {
+		"date": "2018-04-03T12:02:56.723Z",
+		"source": "https://discord.com/channels/429823323585773568/430527417791152140/430698719495716875"
+	},
+	"artists": [
+		{
+			"name": "Coconutsales",
+			"discord": "105032278211571712",
+			"reddit": "Coconutsales"
+		}
+	]
+}
