@@ -1,7 +1,5 @@
 {
-	"names": [
-		"Snek"
-	],
+	"name": "Snek",
 	"description": "The original snek from r/SnekSnek",
 	"pixelated": true,
 	"firstAppearance": {

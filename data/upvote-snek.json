@@ -1,7 +1,5 @@
 {
-	"names": [
-		"Upvote Snek"
-	],
+	"name": "Upvote Snek",
 	"description": "A snek upvoting your post",
 	"firstAppearance": {
 		"date": "2020-10-14T21:19:35.564Z",

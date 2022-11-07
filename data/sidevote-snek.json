@@ -1,7 +1,5 @@
 {
-	"names": [
-		"Sidevote Snek"
-	],
+	"name": "Sidevote Snek",
 	"description": "A snek who is ambivalent to your post",
 	"firstAppearance": {
 		"date": "2022-04-20T04:09:58.834Z",

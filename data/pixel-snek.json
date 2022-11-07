@@ -1,7 +1,5 @@
 {
-	"names": [
-		"Pixel Snek"
-	],
+	"name": "Pixel Snek",
 	"description": "A pixelated snek",
 	"pixelated": true,
 	"firstAppearance": {

@@ -1,7 +1,5 @@
 {
-	"names": [
-		"Argentium Snek"
-	],
+	"name": "Argentium Snek"
 	"description": "A snek representing the argentium award on Reddit",
 	"pixelated": true,
 	"firstAppearance": {

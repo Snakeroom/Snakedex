@@ -1,7 +1,5 @@
 {
-	"names": [
-		"Second Snek"
-	],
+	"name": "Second Snek",
 	"description": "A snek designed after the 2021 r/Second event logo",
 	"pixelated": true,
 	"firstAppearance": {

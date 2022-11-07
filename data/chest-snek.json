@@ -1,7 +1,5 @@
 {
-	"names": [
-		"Chest Snek"
-	],
+	"name": "Chest Snek",
 	"description": "A snek hiding in a treasure chest",
 	"firstAppearance": {
 		"date": "2022-10-16T13:19:51.392Z",

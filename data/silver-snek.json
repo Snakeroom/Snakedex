@@ -1,7 +1,5 @@
 {
-	"names": [
-		"Silver Snek"
-	],
+	"name": "Silver Snek",
 	"description": "A snek representing the silver award on Reddit",
 	"pixelated": true,
 	"order": 1,

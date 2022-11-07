@@ -1,7 +1,5 @@
 {
-	"names": [
-		"Ternion Snek"
-	],
+	"name": "Ternion Snek",
 	"description": "A snek representing the ternion award on Reddit",
 	"pixelated": true,
 	"firstAppearance": {

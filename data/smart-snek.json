@@ -1,6 +1,6 @@
 {
-	"names": [
-		"Smart Snek",
+	"name": "Smart Snek",
+	"alternateNames": [
 		"Salute Snek"
 	],
 	"description": "A snek pointing to its temple",
