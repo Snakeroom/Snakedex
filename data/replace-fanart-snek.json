@@ -1,5 +1,9 @@
 {
-	"names": ["Place 2 Fanart Snek", "Replace Fanart Snek", "Sneighborhood Snek"],
+	"name": "Place 2 Fanart Snek",
+	"alternateNames": [
+		"Replace Fanart Snek",
+		"Sneighborhood Snek"
+	],
 	"description": "Drawn to represent the partnership of the Sneighborhood communities, Snakeroom, OneTrueBiribiri, Balisong, and Moetown (not pictured)",
 	"firstAppearance": {
 		"date": "2022-04-05T00:37:28.000Z",

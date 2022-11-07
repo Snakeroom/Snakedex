@@ -1,5 +1,8 @@
 {
-	"names": ["Place 2 Snek", "Replace Snek"],
+	"name": "Place 2 Snek",
+	"alternateNames": [
+		"Replace Snek"
+	],
 	"description": "Designed for the 2022 r/Place event to be placed on the canvas as Snakeroom's primary art",
 	"pixelated": true,
 	"firstAppearance": {
