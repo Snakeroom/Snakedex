@@ -1,0 +1,16 @@
+{
+	"name": "Corn Snek",
+	"description": "A snek made of corn",
+	"pixelated": true,
+	"firstAppearance": {
+		"date": "2019-04-01T13:53:26.520Z",
+		"source": "https://discord.com/channels/429823323585773568/562263797012627483/562273322092724235"
+	},
+	"artists": [
+		{
+			"name": "Coconutsales",
+			"discord": "105032278211571712",
+			"reddit": "Coconutsales"
+		}
+	]
+}
