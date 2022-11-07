@@ -1,0 +1,20 @@
+{
+	"name": "Royal Snek",
+	"alternateNames": [
+		"King Snek",
+		"Monarch Snek"
+	],
+	"description": "A snek wearing a crown, mantle, monocle, and nose ring",
+	"pixelated": true,
+	"firstAppearance": {
+		"date": "2019-04-01T17:43:40.205Z",
+		"source": "https://discord.com/channels/429823323585773568/561250124559548448/562331260886712321"
+	},
+	"artists": [
+		{
+			"name": "Coconutsales",
+			"discord": "105032278211571712",
+			"reddit": "Coconutsales"
+		}
+	]
+}
