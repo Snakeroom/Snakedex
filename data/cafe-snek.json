@@ -1,0 +1,21 @@
+{
+	"name": "Cafe Snek",
+	"alternateNames": [
+		"Coffee Snek",
+		"Tea Snek",
+		"Hot Chocolate Snek",
+		"Hot Beverage Snek"
+	],
+	"description": "A snek holding a hot beverage",
+	"firstAppearance": {
+		"date": "2022-11-24T14:52:27.079Z",
+		"source": "https://discord.com/channels/429823323585773568/1042942437221466142/1045351197118320740"
+	},
+	"artists": [
+		{
+			"name": "Betawolfs",
+			"discord": "327984584925118466",
+			"reddit": "Betawolfs"
+		}
+	]
+}
