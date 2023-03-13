@@ -20,7 +20,7 @@
 			"name": "The most well known name of the artist of this snek",
 			"discord": "The discord ID of the artist of this snek",
 			"reddit": "The reddit username of the artist of this snek",
-			"realname": "The real name of the artist of this snek"
+			"realName": "The real name of the artist of this snek"
 		}
 	]
 }
