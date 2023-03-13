@@ -1,8 +1,7 @@
 {
-	"name": [
-		"Path of Kairos Snek",
-        "NFT Snek",
-        "Youngluck's Snek"
+	"name": "Path of Kairos Snek",
+	"alternateNames": [
+		"NFT Snek"
 	],
 	"description": "Art drawn for Snakeroom during The Path of Kairos ARG. The Snakeroom provides no comment on its ownership of NFT collectibles.",
 	"firstAppearance": {
@@ -11,10 +10,10 @@
 	},
 	"artists": [
 		{
-			"name": "Youngluck",
+			"name": "youngluck",
 			"discord": "614199446745382947",
 			"reddit": "youngluck",
-            "realname": "Dante Orpilla"
+			"realName": "Dante Orpilla"
 		}
 	]
 }
