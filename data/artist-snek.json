@@ -1,0 +1,18 @@
+{
+	"name": "Artist Snek",
+	"alternateNames": [
+		"Painter Snek"
+	],
+	"description": "A snek painting on a canvas",
+	"firstAppearance": {
+		"date": "2023-03-14T19:24:26.011Z",
+		"source": "https://discord.com/channels/429823323585773568/1082042966090190848/1085282308896063558"
+	},
+	"artists": [
+		{
+			"name": "Betawolfs",
+			"discord": "327984584925118466",
+			"reddit": "Betawolfs"
+		}
+	]
+}
