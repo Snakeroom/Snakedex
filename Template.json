@@ -7,7 +7,7 @@
 	],
 	"description": "The description of this snek",
 	"pixelated": true,
-	"website_safe": true,
+	"homepageHidden": true,
 	"firstAppearance": {
 		"date": "An ISO 8601 datetime of the first appearance of this snek",
 		"source": "A URL to the first appearance of this snek"

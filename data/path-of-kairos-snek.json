@@ -3,7 +3,8 @@
 	"alternateNames": [
 		"NFT Snek"
 	],
-	"description": "Art drawn for Snakeroom during The Path of Kairos ARG. The Snakeroom provides no comment on its ownership of NFT collectibles.",
+	"description": "Drawn for Snakeroom during The Path of Kairos ARG. The Snakeroom provides no comment on its ownership of NFT collectibles.",
+	"homepageHidden": true,
 	"firstAppearance": {
 		"date": "2022-03-28T08:56:00.000Z",
 		"source": "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34264111200187958864004124383372675233141560936262917874723925051993466339332"
