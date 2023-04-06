@@ -1,7 +1,5 @@
 {
-	"name": [
-		"The stylized primary name for this snek"
-	],
+	"name": "The stylized primary name for this snek",
 	"alternateNames": [
 		"A list of stylized alternative names for this snek"
 	],
